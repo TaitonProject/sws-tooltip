@@ -1,5 +1,7 @@
 # tooltip
 sws-tooltip module to work in Angular 5
+## NPM install
+npm install sws-tooltip --save
 ### To install simply run
 npm install npm install sws-tooltip.
 To use it in your Angular 5 app import the module.
