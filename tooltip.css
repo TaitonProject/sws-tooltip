@@ -1,0 +1,58 @@
+.sws-tooltip-wrapper {
+  position: relative;
+}
+.sws-tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  display: none;
+}
+.sws-tooltip-arrow__right {
+  top: 50%;
+  right: 100%;
+  margin-top: -5px;
+  margin-right: 3px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #656565;
+}
+.sws-tooltip-arrow__left {
+  top: 50%;
+  left: 100%;
+  margin-top: -5px;
+  margin-left: 3px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #656565;
+}
+.sws-tooltip {
+  position: absolute;
+  height: 20px;
+  color: #fff;
+  background: #656565;
+  border-radius: 2px;
+  font-size: 12px;
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-transform: lowercase;
+  display: none;
+}
+.sws-tooltip__left {
+  right: 100%;
+  margin-right: 8px;
+  top: 50%;
+  margin-top: -10px;
+}
+.sws-tooltip__right {
+  left: 100%;
+  margin-left: 8px;
+  top: 50%;
+  margin-top: -10px;
+}
+.sws-tooltip-wrapper.sws-tooltip__active .sws-tooltip {
+  display: inline-block;
+}
+.sws-tooltip-wrapper.sws-tooltip__active .sws-tooltip-arrow {
+  display: block;
+}

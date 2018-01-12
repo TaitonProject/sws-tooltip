@@ -1,0 +1,29 @@
+{
+  "name": "sws-tooltip",
+  "version": "1.0.7",
+  "description": "sws-tooltip module npm",
+  "main": "dist/bundles/tooltip.umd.js",
+  "scripts": {
+    "cleanup": "rimraf dist/bundles dist/src dist/index.d.ts dist/index.js dist/index.js.map dist/LICENCE dist/README.md",
+    "bundling": "rollup -c",
+    "minify": "uglifyjs dist/bundles/tooltip.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/tooltip.umd.min.js",
+    "build": "npm run cleanup && ngc && npm run bundling && npm run minify"
+  },
+  "author": "Evgeny <evgenmirsky@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@angular/compiler": "^5.2.0",
+    "@angular/core": "^5.2.0",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.5.2",
+    "zone.js": "^0.8.14"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.6.0",
+    "@angular/compiler-cli": "^5.2.0",
+    "rimraf": "^2.5.4",
+    "rollup": "^0.37.0",
+    "typescript": "~2.4.2",
+    "uglify-js": "^2.7.5"
+  }
+}
